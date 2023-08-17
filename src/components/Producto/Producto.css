@@ -1,0 +1,14 @@
+.cardProd{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: auto;
+    border: solid 1px black;
+    margin: 8px;
+    align-items: center;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+
