@@ -25,13 +25,15 @@ const ContadorUnidad = ({cantidad, onConfirm}) => {
     }
   };
   return (
-<div>
-    <p>Unidad</p>
-    <button onClick={decrementar}>-</button>
-<strong>{contador}</strong>
-    <button onClick={incrementar}>+</button>
-    <button onClick={confirmar}> ✔</button>
-</div>  )
+<>
+    <p className='p'>Unidad</p>
+    <div className='contador'>
+      <button onClick={decrementar} className="restar">-</button>
+      <strong className="numero">{contador}</strong>
+      <button onClick={incrementar} className="sumar">+</button>
+      <button onClick={confirmar} className="confirmar">✔</button>
+    </div>
+</>  )
 }
 
 export default ContadorUnidad

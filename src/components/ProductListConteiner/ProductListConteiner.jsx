@@ -16,7 +16,7 @@ funcionBebidas(marca)
             .catch(error => console.log(error))
 }, [marca])
   return (
-    <div>
+    <div className="contenedor">
         <ProductList bebidas={bebidas}/>
     </div>
   )

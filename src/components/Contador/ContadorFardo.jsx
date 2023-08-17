@@ -1,4 +1,5 @@
 import { useState } from "react"
+import "./Contador.css"
 const ContadorFardo = ({ cantidad, cantFardo, onConfirm }) => {
   const [contador, setContador] = useState(0)
 
@@ -24,12 +25,12 @@ const ContadorFardo = ({ cantidad, cantFardo, onConfirm }) => {
 
   return (
     <>
-      <p>Fardo</p>
-        <div>
-      <button onClick={decrementar} >-</button>
-      <strong>{contador}</strong>
-      <button onClick={incrementar}>+</button>
-      <button onClick={confirmar}>✔</button>
+      <p className="p">Fardo</p>
+      <div className='contador'>
+      <button onClick={decrementar} className="restar">-</button>
+      <strong className="numero">{contador}</strong>
+      <button onClick={incrementar} className="sumar">+</button>
+      <button onClick={confirmar} className="confirmar">✔</button>
     </div>
     </>
 )

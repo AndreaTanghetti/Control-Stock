@@ -1,40 +1,3 @@
-// import React, { useState } from "react";
-// import ContadorUnidad from "../Contador/ContadorUnidad";
-// import ContadorFardo from "../Contador/ContadorFardo";
-// import "./Producto.css";
-
-// const Producto = ({ nombre, cantidad, id, marca, img, cantFardo}) => {
-//   const [totalCantidad, setTotalCantidad] = useState(cantidad);
-
-//   const handleConfirmFardo = (contador) => {
-//     const nuevaCantidad = totalCantidad + cantFardo * contador;
-//     setTotalCantidad(nuevaCantidad);
-//   };
-
-
-// const handleConfirmUnidad = (contador) => {
-//   if (contador === -1) {
-//     const nuevaCantidad = totalCantidad - 1; 
-//     setTotalCantidad(nuevaCantidad);
-//   } else {
-//     const nuevaCantidad = totalCantidad + contador;
-//     setTotalCantidad(nuevaCantidad);
-//   }
-// };
-//   return (
-//     <div className="cardProd">
-//       <img src={img} alt={nombre} />
-//       <p className="nombre">{nombre}</p>
-//       <p className="stock">stock: {totalCantidad}</p>
-//       <div className="contadores">
-//       <ContadorFardo cantidad={totalCantidad} cantFardo={cantFardo} onConfirm={handleConfirmFardo} />
-//       <ContadorUnidad cantidad={totalCantidad} onConfirm={handleConfirmUnidad} />
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Producto;
 import React, { useState, useEffect } from "react";
 import ContadorUnidad from "../Contador/ContadorUnidad";
 import ContadorFardo from "../Contador/ContadorFardo";
@@ -76,7 +39,7 @@ const actualizar =()=>{
     <div className="cardProd">
 
       <img src={img} alt="logo" />
-            <button onClick={actualizar}>🔄</button>
+            <button onClick={actualizar} className="actualizar">🔄</button>
       <p className="nombre">{nombre}</p>
       <p className="stock">stock: {totalCantidad}</p>
       <div className="contadores">

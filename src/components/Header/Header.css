@@ -3,6 +3,10 @@ header{
     display: flex;
     flex-direction: column;
 }
+.logo{
+  text-decoration: none;
+  color:white;
+}
 h1{
     text-align: center;
 }
@@ -67,10 +71,10 @@ h1{
     padding: 10px;
     background-color: black;
     position: absolute;
-    top: 13%;
+    top: 86.5px;
     left: 0;
-    width: 50%;
-    height: 70%;
+    width: 80%;
+    height: 100%;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     transition: clip-path 0.3s;
 }
@@ -90,4 +94,15 @@ h1{
 .link:hover {
     background-color: violet;
     border-radius: 50px;
+  }
+
+  .reset{
+    background: black;
+    color: white;
+    border: 1px solid;
+    padding: 8px;
+    border: none;
+  }
+  li{
+    margin: 8px 0 ;
   }

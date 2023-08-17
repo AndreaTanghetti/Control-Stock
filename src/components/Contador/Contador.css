@@ -1,0 +1,34 @@
+.p{
+    text-align: center;
+    margin: 8px;
+    font-weight: bolder;
+}
+.contador{
+    display: grid;
+    width: 100%;
+    margin-bottom: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 100%;
+    grid-template-areas:
+    "restar num sumar confirmar"
+}
+.restar, .sumar, .confirmar{
+    background: black;
+    color: white;
+    border: 1px solid;
+    padding: 8px;
+    margin: auto;
+}
+.restar{
+    grid-area: restar;
+}
+.numero{
+    grid-area: num;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sumar{
+    grid-area: sumar;
+}
+
